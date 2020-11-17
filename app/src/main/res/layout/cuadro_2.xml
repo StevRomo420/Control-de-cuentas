@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/textColorHighlightInverse"
+    android:backgroundTint="?android:attr/textColorHighlightInverse"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mesageToPay"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Monto a Pagar"
+        android:textSize="20dp"
+
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/btnToPay"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/redondeado"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Monto a pagar"
+        android:inputType="phone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp">
+
+        <Button
+            android:id="@+id/acept"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/redondeado"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="Aceptar" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toStartOf="@+id/acept"
+            android:background="@drawable/redondeado"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="Cancelar"
+            tools:text="Cancelar" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
